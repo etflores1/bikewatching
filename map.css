@@ -1,0 +1,59 @@
+html, body {
+    margin: 0;
+    padding: 5;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+  }
+     
+#map {
+    width: 100%;    /* Adjust width to your desired size */
+    height: 100%;   /* Adjust height to your desired size */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow for effect */
+    border-radius: 8px; /* Optional: rounded corners */
+}
+
+#map svg {
+    position: absolute; /* Allows z-index to work */
+    z-index: 1; /* Puts SVG above the map */
+    width: 100%; /* Full map width */
+    height: 100%; /* Full map height */
+    pointer-events: none; /* Prevents blocking map interactions */
+}
+
+circle {
+    pointer-events: auto;
+}
+
+header {
+    display: flex;
+    gap: 1em;
+    align-items: baseline;
+    margin-bottom: 1em;
+    
+}
+
+label {
+    display: block;
+    margin-left: auto;
+}
+
+input[type="range"] {
+    width: 500px;
+    cursor: pointer;
+}
+
+time {
+    display: block;
+    font-weight: bold;
+    text-align: right;
+}
+
+em {
+    display: block;
+    color: gray;
+    font-style: italic;
+    text-align: right;
+}
