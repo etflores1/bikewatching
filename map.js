@@ -153,9 +153,10 @@ map.on('load', async () => {
         }
       
         // Trigger filtering logic which will be implemented in the next step
+        timeSlider.addEventListener('input', updateTimeDisplay);
+
       }
 
-    timeSlider.addEventListener('input', updateTimeDisplay);
     updateTimeDisplay();    
 
 });
